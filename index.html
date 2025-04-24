@@ -9,42 +9,152 @@
 <body>
   <div class="calcualtor">
     <p class="display">
-      123
+
     </p> 
     <div class="calculator-size"> 
       <button class="digits" 
-      onclick="
-      ;
+      onclick=" 
+      number += 1; 
+      document.querySelector('.display').textContent = number;
       "> 
         1
       </button> 
     
       <button class="digits" 
       onclick="
-      ;
+      number += 2; 
+      document.querySelector('.display').textContent = number;
       "> 
         2
       </button> 
     
       <button class="digits" 
       onclick="
-      ;
+      number += 3; 
+      document.querySelector('.display').textContent = number;
       "> 
         3
       </button> 
     
       <button class="operator" 
-      onclick=" 
-      
+      onclick="  
+      number += '+';
+      document.querySelector('.display').textContent = number;
       "> 
         +
-      </button>     
+      </button>      
+
+        <button class="digits" 
+        onclick=" 
+        number += 4; 
+        document.querySelector('.display').textContent = number;
+        "> 
+          4
+        </button> 
       
-    </div>
+        <button class="digits" 
+        onclick="
+        number += 5; 
+        document.querySelector('.display').textContent = number;
+        "> 
+          5
+        </button> 
+      
+        <button class="digits" 
+        onclick="
+        number += 6; 
+        document.querySelector('.display').textContent = number;
+        "> 
+          6
+        </button> 
+      
+        <button class="operator" 
+        onclick="  
+        number += '-';
+        document.querySelector('.display').textContent = number;
+        "> 
+          -
+        </button>      
+
+          <button class="digits" 
+          onclick=" 
+          number += 7; 
+          document.querySelector('.display').textContent = number;
+          "> 
+            7
+          </button> 
+        
+          <button class="digits" 
+          onclick="
+          number += 8; 
+          document.querySelector('.display').textContent = number;
+          "> 
+            8
+          </button> 
+        
+          <button class="digits" 
+          onclick="
+          number += 9; 
+          document.querySelector('.display').textContent = number;
+          "> 
+            9
+          </button> 
+        
+          <button class="operator" 
+          onclick="  
+          number += '*';
+          document.querySelector('.display').textContent = number;
+          "> 
+            *
+          </button>      
+
+            <button class="digits" 
+            onclick=" 
+            number += 0; 
+            document.querySelector('.display').textContent = number;
+            "> 
+              0
+            </button> 
+          
+            <button class="digits" 
+            onclick="
+            number += '.'; 
+            document.querySelector('.display').textContent = number;
+            "> 
+              .
+            </button> 
+          
+            <button class="digits" 
+            onclick="
+            document.querySelector('.display').textContent = eval(number);
+            "> 
+              =
+            </button> 
+          
+            <button class="operator" 
+            onclick="  
+            number += '/';
+            document.querySelector('.display').textContent = number;
+            "> 
+              /
+            </button>       
+
+          </button> 
+          
+          <button class="clear-operator" 
+          onclick="  
+          number = '';
+          document.querySelector('.display').textContent = number;
+          "> 
+            Clear
+          </button>      
+      
   </div>
 
+
   <script>
-    let calculation = ``;
+    let number = ""; 
+
   </script>
 </body>
 </html>
